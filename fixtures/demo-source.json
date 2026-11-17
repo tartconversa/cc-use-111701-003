@@ -1,0 +1,41 @@
+{
+  "directory": {
+    "华中|": {
+      "scope_id": "central",
+      "snapshot": "v1",
+      "next_cursor": "h2",
+      "dealers": [
+        {"dealer_id": "d-1", "region": "华中", "status": "active"},
+        {"dealer_id": "d-2", "region": "华中", "status": "active"}
+      ]
+    },
+    "华中|h2": {
+      "scope_id": "central",
+      "snapshot": "v1",
+      "next_cursor": null,
+      "dealers": [
+        {"dealer_id": "d-3", "region": "华中", "status": "active"}
+      ]
+    },
+    "华南|": {
+      "scope_id": "central",
+      "snapshot": "v1",
+      "next_cursor": null,
+      "dealers": [
+        {"dealer_id": "d-7", "region": "华南", "status": "active"},
+        {"dealer_id": "d-8", "region": "华南", "status": "active"}
+      ]
+    }
+  },
+  "changes": {
+    "central|0|": {
+      "scope_id": "central",
+      "snapshot": "v1",
+      "next_cursor": null,
+      "events": [
+        {"sequence": 1, "kind": "transfer", "dealer_id": "d-3", "from_region": "华中", "to_region": "华南"},
+        {"sequence": 2, "kind": "revoke", "dealer_id": "d-8"}
+      ]
+    }
+  }
+}

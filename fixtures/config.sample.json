@@ -1,0 +1,9 @@
+{
+  "source_id": "source-a",
+  "authorized_regions": ["华中", "华南"],
+  "directory_url": "https://example.test/directory?region={region}&cursor={cursor}",
+  "changes_url": "https://example.test/changes?scope={scope}&after={after}&cursor={cursor}",
+  "reconcile_interval_runs": 0,
+  "max_pages_per_walk": 1000,
+  "max_walk_restarts": 3
+}
